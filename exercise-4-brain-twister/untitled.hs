@@ -7,6 +7,6 @@ wordreverse xs = do
 main :: IO ()
 main = do
     strings <- getLine
-    putStrLn $unwords $map wordreverse $words strings
+    putStrLn $ unwords $ map wordreverse $ words strings
     f<- isEOF
     if f then return() else main
